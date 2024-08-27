@@ -1,0 +1,18 @@
+<!-- src/app/components/property-comparison/property-comparison.component.html -->
+<div class="property-comparison" *ngIf="propertiesToCompare.length > 0">
+    <h3>Compare Properties</h3>
+    <div class="comparison-grid">
+      <div *ngFor="let property of propertiesToCompare" class="comparison-card">
+        <img [src]="property.imageUrl" alt="{{property.title}}">
+        <h4>{{property.title}}</h4>
+        <p>{{property.location}}</p>
+        <p>{{property.price | currency}}</p>
+        <ul>
+          <li><strong>Bedrooms:</strong> {{property.bedrooms}}</li>
+          <li><strong>Bathrooms:</strong> {{property.bathrooms}}</li>
+          <li><strong>Amenities:</strong> {{property.amenities.join(', ')}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  

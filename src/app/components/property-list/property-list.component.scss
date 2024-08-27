@@ -1,0 +1,49 @@
+/* src/app/components/property-list/property-list.component.css */
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .property-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+  }
+  
+  .property-card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .property-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .property-card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .property-card p {
+    margin: 5px 0;
+  }
+  
+  .property-card button {
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .property-card button:hover {
+    background-color: #0056b3;
+  }
+  

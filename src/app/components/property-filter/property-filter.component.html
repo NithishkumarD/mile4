@@ -1,0 +1,25 @@
+<!-- src/app/components/property-filter/property-filter.component.html -->
+<div class="property-filter">
+    <h3>Filter Properties</h3>
+    <form [formGroup]="filterForm" (ngSubmit)="onSubmit()">
+      <label for="location">Location</label>
+      <input id="location" formControlName="location" type="text" placeholder="Enter location">
+  
+      <label for="minPrice">Min Price</label>
+      <input id="minPrice" formControlName="minPrice" type="number" placeholder="Min price">
+  
+      <label for="maxPrice">Max Price</label>
+      <input id="maxPrice" formControlName="maxPrice" type="number" placeholder="Max price">
+  
+      <label for="type">Property Type</label>
+      <select id="type" formControlName="type">
+        <option value="">Any</option>
+        <option value="House">House</option>
+        <option value="Apartment">Apartment</option>
+        <option value="Condo">Condo</option>
+      </select>
+  
+      <button type="submit">Apply Filters</button>
+    </form>
+  </div>
+  

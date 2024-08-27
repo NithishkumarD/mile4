@@ -1,0 +1,44 @@
+/* src/app/components/property-filter/property-filter.component.css */
+.property-filter {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .property-filter h3 {
+    margin-bottom: 15px;
+  }
+  
+  .property-filter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .property-filter label {
+    font-weight: bold;
+  }
+  
+  .property-filter input,
+  .property-filter select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .property-filter button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .property-filter button:hover {
+    background-color: #0056b3;
+  }
+  

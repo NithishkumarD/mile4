@@ -1,0 +1,109 @@
+// src/app/app.component.scss
+
+/* General container styling */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Header styling */
+  .app-header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+  }
+  
+  /* Main content styling */
+  .app-main {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Property filter component styling */
+  app-property-filter {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Property list component styling */
+  app-property-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Individual property card styling */
+  .property-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: box-shadow 0.3s ease;
+  
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  /* Property image styling */
+  .property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Property details styling */
+  .property-details {
+    padding: 1rem;
+  
+    h2 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  
+    p {
+      margin: 0.5rem 0;
+    }
+  
+    .price {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  }
+  
+  /* Property button styling */
+  .property-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+  

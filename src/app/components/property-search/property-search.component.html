@@ -1,0 +1,24 @@
+<!-- src/app/components/property-search/property-search.component.html -->
+<div class="property-search">
+    <form [formGroup]="searchForm" (ngSubmit)="onSearch()">
+      <label for="location">Location</label>
+      <input id="location" formControlName="location" type="text">
+  
+      <label for="minPrice">Min Price</label>
+      <input id="minPrice" formControlName="minPrice" type="number">
+  
+      <label for="maxPrice">Max Price</label>
+      <input id="maxPrice" formControlName="maxPrice" type="number">
+  
+      <label for="type">Property Type</label>
+      <select id="type" formControlName="type">
+        <option value="">Any</option>
+        <option value="House">House</option>
+        <option value="Apartment">Apartment</option>
+        <option value="Condo">Condo</option>
+      </select>
+  
+      <button type="submit">Search</button>
+    </form>
+  </div>
+  

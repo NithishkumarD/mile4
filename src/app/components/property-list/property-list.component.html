@@ -1,0 +1,12 @@
+<!-- src/app/components/property-list/property-list.component.html -->
+<div class="property-list">
+    <div *ngFor="let property of filteredProperties" class="property-card">
+      <img [src]="property.imageUrl" alt="{{property.title}}">
+      <h2>{{property.title}}</h2>
+      <p>{{property.location}}</p>
+      <p>{{property.price | currency}}</p>
+      <button (click)="selectProperty(property)">View Details</button>
+      <button (click)="addToCompare(property)">Compare</button>
+    </div>
+  </div>
+  

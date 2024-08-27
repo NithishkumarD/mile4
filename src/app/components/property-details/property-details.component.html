@@ -1,0 +1,15 @@
+<!-- src/app/components/property-details/property-details.component.html -->
+<div class="property-details" *ngIf="property">
+    <img [src]="property.imageUrl" alt="{{property.title}}">
+    <h2>{{property.title}}</h2>
+    <p>{{property.location}}</p>
+    <p>{{property.price | currency}}</p>
+    <p>{{property.description}}</p>
+    <ul>
+      <li><strong>Type:</strong> {{property.type}}</li>
+      <li><strong>Bedrooms:</strong> {{property.bedrooms}}</li>
+      <li><strong>Bathrooms:</strong> {{property.bathrooms}}</li>
+      <li><strong>Amenities:</strong> {{property.amenities.join(', ')}}</li>
+    </ul>
+  </div>
+  

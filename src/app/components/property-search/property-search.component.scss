@@ -1,0 +1,43 @@
+/* src/app/components/property-search/property-search.component.css */
+.property-search {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .property-search form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .property-search label {
+    flex: 1 1 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .property-search input,
+  .property-search select {
+    flex: 1 1 calc(25% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .property-search button {
+    flex: 1 1 100%;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .property-search button:hover {
+    background-color: #218838;
+  }
+  
